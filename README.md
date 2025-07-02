@@ -18,7 +18,6 @@ This is a simple Node.js application that allows users to manage their personal 
 - [Configuration](#configuration)
 - [Running the Application](#running-the-application)
 - [Endpoints](#endpoints)
-- [License](#license)
 
 ## Prerequisites
 Before you begin, ensure you have met the following requirements:
@@ -137,10 +136,3 @@ Before you begin, ensure you have met the following requirements:
       }
     }
     ```
-
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.

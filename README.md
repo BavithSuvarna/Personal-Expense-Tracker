@@ -29,7 +29,7 @@ Before you begin, ensure you have met the following requirements:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/aaronfernandes21/Personal-Expense-Tracker
+    git clone https://https://github.com/BavithSuvarna/Personal-Expense-Tracker
     ```
 2. Navigate into the project folder:
     ```bash

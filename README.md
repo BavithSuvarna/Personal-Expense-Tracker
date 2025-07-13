@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Expense Tracker App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack Expense Tracker built with *React.js, **Node.js, **Express, and **MongoDB*, allowing users to securely manage their personal expenses with category-wise analysis, date-based filters, and visual charts.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- *User Authentication (JWT)*
+  - Secure signup/login
+  - Protected dashboard route
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- *Dashboard*
+  - Displays total and category-wise expenses
+  - Pie chart visualization using Recharts
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- *Add, Edit, Delete Expenses*
+  - Track title, amount, category, and date
+  - Instant updates with automatic refresh
 
-### `npm test`
+- *Date-Based Filters*
+  - Filter by:
+    - Today
+    - Last 7 Days
+    - This Month
+    - Last 6 Months
+    - This Year
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- *Expense Summary*
+  - View filtered totals and category-wise breakdown
 
-### `npm run build`
+- *Responsive Design*
+  - Works beautifully on desktop, tablet, and mobile
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
+## Preview
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Dashboard](./public/dashboard.png)
+![Expense List](./public/expense.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+| Frontend         | Backend        | Database   | Other          |
+|------------------|----------------|------------|----------------|
+| React.js         | Node.js        | MongoDB    | JWT Auth       |
+| Axios            | Express.js     | Mongoose   | Recharts       |
+| React Hooks      | CORS           | Dotenv     | Date Filtering |
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Setup Instructions
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Install frontend dependencies
+   bash
+   cd frontend
+   npm install
+   
+2. Install backend dependencies
+   bash
+   cd ../backend
+   npm install
+   
+3. Set up Environment Variables
+     - Create a .env file inside the server/ directory and add the following:
+       - PORT=5000
+       - MONGO_URI=your_mongodb_connection_string
+       - JWT_SECRET=your_jwt_secret
+     - If you have environment-specific frontend URLs or API endpoints, you may also configure .env in the frontend/ directory.
+4. Start the application:
+     Start the backend server:
+     bash
+     cd backend
+     nodemon server.js
+     
+     Start the frontend app:
+     bash
+     cd frontend 
+     npm start
+     

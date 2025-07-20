@@ -52,30 +52,43 @@ A full-stack Expense Tracker built with *React.js, **Node.js, **Express, and **M
 
 ### Setup Instructions
 
-1. Install frontend dependencies
-   bash
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/BavithSuvarna/Personal-Expense-Tracker
+   ```
+
+2. Navigate into the project directory:
+   ```bash
+   cd Personal-Expense-Tracker
+   ```
+3. Install frontend dependencies
+   ```bash
    cd frontend
    npm install
+   ```
    
-2. Install backend dependencies
-   bash
+4. Install backend dependencies
+   ```bash
    cd ../backend
    npm install
+   ```
    
-3. Set up Environment Variables
+5. Set up Environment Variables
      - Create a .env file inside the server/ directory and add the following:
        - PORT=5000
        - MONGO_URI=your_mongodb_connection_string
        - JWT_SECRET=your_jwt_secret
      - If you have environment-specific frontend URLs or API endpoints, you may also configure .env in the frontend/ directory.
-4. Start the application:
+6. Start the application:
      Start the backend server:
-     bash
+     ```bash
      cd backend
      nodemon server.js
+     ```
      
      Start the frontend app:
-     bash
+     ```bash
      cd frontend 
      npm start
-     
+     ```
+7. Visit the application at http://localhost:3000 in your browser.
